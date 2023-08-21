@@ -1,0 +1,29 @@
+# .gitignore
+
+# Node.js
+node_modules/
+
+# IDE
+.idea/
+
+# Paket yönetimi dosyaları
+package-lock.json
+yarn.lock
+
+# Derleme çıktıları
+dist/
+build/
+
+# Ortam dosyaları
+.env
+.env.local
+.env.*.local
+
+# Veritabanı
+*.sqlite
+*.db
+
+# Log dosyaları
+*.log
+logs/
+log/
