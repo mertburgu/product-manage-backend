@@ -5,7 +5,7 @@ const PORT = process.env.PORT || 3000;
 const authRoutes = require('./routes/authRoutes');
 const productRoutes = require('./routes/productRoutes');
 const mongoose = require('mongoose');
-
+const cors = require('cors');
 
 
 mongoose.connect('mongodb://localhost/product_management', {
@@ -17,6 +17,7 @@ mongoose.connect('mongodb://localhost/product_management', {
     console.error('Error connecting to MongoDB:', error);
 });
 
+app.use(cors());
 app.use(express.json()); // JSON verileri için
 app.use(express.urlencoded({ extended: false }));
 
