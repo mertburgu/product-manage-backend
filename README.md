@@ -1,5 +1,8 @@
 # Node.js App
 
+Base Url:
+localhost:3000/api/
+
 Case:
 
 Ürün Yönetimi;
