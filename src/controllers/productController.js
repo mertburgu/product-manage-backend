@@ -12,8 +12,7 @@ productController.index = async (req, res) => {
 
 productController.show = async (req, res) => {
     try {
-        const product = await Product.findById(req.params.productId);
-
+        const product = await Product.findById(req.params.id);
         if (!product) {
             return res.status(404).json({ message: 'Product not found' });
         }
@@ -48,7 +47,7 @@ productController.update = async (req, res) => {
         const { name, description, productCode, quantity } = req.body;
 
         const updatedProduct = await Product.findByIdAndUpdate(
-            req.params.productId,
+            req.params.id,
             {
                 name,
                 description,
@@ -66,15 +65,16 @@ productController.update = async (req, res) => {
 
 productController.delete = async (req, res) => {
     try {
-        const deletedProduct = await Product.findByIdAndDelete(req.params.productId);
-
+        const id = req.params.id;
+        const deletedProduct = await Product.findByIdAndDelete(id);
         if (!deletedProduct) {
-            return res.status(404).json({ message: 'Product not found' });
+            return res.status(404).json({ error: "Product not found" });
         }
 
-        res.status(200).json({ message: 'Product deleted' });
+        res.json({ message: "Product deleted successfully" });
     } catch (error) {
-        res.status(500).json({ error: error.message });
+        console.error(error);
+        res.status(500).json({ error: "Server error" });
     }
 };
 

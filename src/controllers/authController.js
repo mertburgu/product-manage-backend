@@ -39,7 +39,9 @@ authController.register = async (req, res) => {
 
         const savedUser = await user.save();
 
-        res.status(200).json({ message: 'Registration successful' });
+        const token = jwt.sign({ _id: savedUser._id }, 'your_secret_key');
+
+        res.status(200).json({ token });
     } catch (error) {
         res.status(500).json({ error: error.message });
     }

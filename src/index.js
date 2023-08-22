@@ -18,7 +18,7 @@ mongoose.connect('mongodb://localhost/product_management', {
 });
 
 app.use(cors());
-app.use(express.json()); // JSON verileri için
+app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
 app.use('/api', authRoutes);

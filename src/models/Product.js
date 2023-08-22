@@ -9,4 +9,8 @@ const productSchema = new mongoose.Schema({
     updatedAt: {type: Date, default: Date.now},
 });
 
+productSchema.pre('findOneAndUpdate', function(next) {
+    this.set({ updatedAt: new Date() });
+    next();
+});
 module.exports = mongoose.model('Product', productSchema);
