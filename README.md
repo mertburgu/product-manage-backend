@@ -1,3 +1,85 @@
+
+# Ürün Yönetimi Backend
+
+Bu proje, ürün yönetimi uygulamasının backend tarafını içerir. Express.js, MongoDB ve diğer teknolojiler kullanılmıştır.
+
+## Başlangıç
+
+Aşağıdaki adımları takip ederek projeyi yerel makinenizde çalıştırabilirsiniz.
+
+### Gereksinimler
+
+- Node.js
+- npm (Node Package Manager)
+- MongoDB (yerel veya uzak bir veritabanı sunucusu)
+
+### Kurulum
+
+1. Bu depoyu klonlayın:
+
+   ```bash
+   git clone https://github.com/mertburgu/product-manage-backend.git
+
+
+MongoDB veritabanını çalıştırın (yerelde veya uzakta):
+
+Kullanım
+Uygulama başlatıldıktan sonra, backend sunucusu localhost:3000 adresinde çalışacaktır. Aşağıda projenin temel kullanım örneklerini bulabilirsiniz:
+
+Kullanıcı Kaydı
+URL: /register
+Method: POST
+Açıklama: Kullanıcı kaydı işlemi.
+
+Örnek İstek:
+
+POST /register
+Content-Type: application/json
+
+{
+  "username": "kullanici123",
+  "password": "sifre123",
+  "email": "ornek@example.com"
+}
+
+
+Kullanıcı Girişi
+URL: /login
+Method: POST
+Açıklama: Kullanıcı girişi işlemi.
+
+Örnek İstek:
+
+http
+Copy code
+POST /login
+Content-Type: application/json
+
+{
+  "emailOrUsername": "kullanici123",
+  "password": "sifre123"
+}
+Ürünleri Listele
+URL: /products
+Method: GET
+Açıklama: Tüm ürünleri listeler.
+
+Ürün Detayı
+URL: /products/:id
+Method: GET
+Açıklama: Belirtilen ID'ye sahip ürünün detayını getirir.
+
+Daha fazla endpoint ve kullanım örneği için lütfen projenin kaynak kodlarını inceleyin.
+
+Katkıda Bulunma
+Eğer projeye katkıda bulunmak isterseniz, lütfen aşağıdaki adımları takip edin:
+
+Bu depoyu forklayın.
+Yeni bir dal oluşturun: feature/yeni-ozellik veya bugfix/hata-duzeltme.
+Değişikliklerinizi yapın ve commit'leyin.
+Forkladığınız orijinal repoya bir Pull Talebi (Pull Request) açın.
+
+
 # Node.js App
 
 Base Url:
