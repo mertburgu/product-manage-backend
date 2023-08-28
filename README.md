@@ -15,7 +15,7 @@ Aşağıdaki adımları takip ederek projeyi yerel makinenizde çalıştırabili
 ### Kullanım
 Uygulama başlatıldıktan sonra, backend sunucusu localhost:3000 adresinde çalışacaktır. Aşağıda projenin temel kullanım örneklerini bulabilirsiniz:
 
-### Kullanılan Teknolojiler
+### Kullanılanlar
 
 - Express.js
 - MongoDB
