@@ -1,4 +1,3 @@
-
 # Ürün Yönetimi Backend
 
 Bu proje, ürün yönetimi uygulamasının backend tarafını içerir. Express.js, MongoDB ve diğer teknolojiler kullanılmıştır.
@@ -17,21 +16,18 @@ Aşağıdaki adımları takip ederek projeyi yerel makinenizde çalıştırabili
 
 1. Bu depoyu klonlayın:
 
-   ```bash
-   git clone https://github.com/mertburgu/product-manage-backend.git
+git clone https://github.com/mertburgu/product-manage-backend.git
 
-
-MongoDB veritabanını çalıştırın (yerelde veya uzakta):
-
-Kullanım
+### Kullanım
 Uygulama başlatıldıktan sonra, backend sunucusu localhost:3000 adresinde çalışacaktır. Aşağıda projenin temel kullanım örneklerini bulabilirsiniz:
 
-Kullanıcı Kaydı
+#### Kullanıcı Kaydı
+
 URL: /register
 Method: POST
 Açıklama: Kullanıcı kaydı işlemi.
 
-Örnek İstek:
+##### Örnek İstek:
 
 POST /register
 Content-Type: application/json
@@ -42,16 +38,13 @@ Content-Type: application/json
   "email": "ornek@example.com"
 }
 
-
-Kullanıcı Girişi
+#### Kullanıcı Girişi
 URL: /login
 Method: POST
 Açıklama: Kullanıcı girişi işlemi.
 
-Örnek İstek:
+##### Örnek İstek:
 
-http
-Copy code
 POST /login
 Content-Type: application/json
 
@@ -59,44 +52,35 @@ Content-Type: application/json
   "emailOrUsername": "kullanici123",
   "password": "sifre123"
 }
-Ürünleri Listele
+
+#### Ürünleri Listele
 URL: /products
 Method: GET
 Açıklama: Tüm ürünleri listeler.
 
-Ürün Detayı
+##### Ürün Detayı
 URL: /products/:id
 Method: GET
 Açıklama: Belirtilen ID'ye sahip ürünün detayını getirir.
-
 Daha fazla endpoint ve kullanım örneği için lütfen projenin kaynak kodlarını inceleyin.
-
-Katkıda Bulunma
-Eğer projeye katkıda bulunmak isterseniz, lütfen aşağıdaki adımları takip edin:
-
-Bu depoyu forklayın.
-Yeni bir dal oluşturun: feature/yeni-ozellik veya bugfix/hata-duzeltme.
-Değişikliklerinizi yapın ve commit'leyin.
-Forkladığınız orijinal repoya bir Pull Talebi (Pull Request) açın.
-
 
 # Node.js App
 
-Base Url:
+## Base Url:
 localhost:3000/api/
 
-Case:
+### Case:
 
-Ürün Yönetimi;
+#### Ürün Yönetimi;
 
 Bir firmanın ürünlerinin listesinin tutulduğu ve bu ürünlerin giriş
 çıkışlarının yapılıp listelendiği projenin arayüz ve backendinin hazırlanması
 
 
-Şemalar:
+### Şemalar:
 
 
-Kullanıcılar;
+#### Kullanıcılar;
 
 Adı           : string
 
@@ -107,7 +91,7 @@ Kullanıcı Adı : string
 Email         : string
 
 
-Ürünler;
+#### Ürünler;
 
 Ürün Adı            : string
 
@@ -118,14 +102,14 @@ Email         : string
 Stoktaki Ürün Adedi : number
 
 
-Ürün Hareketleri;
+#### Ürün Hareketleri;
 
 Hareket Açıklaması  : string
 
 Giriş/Çıkış Adedi   : number
 
 
-Koşullar:
+### Koşullar:
 
 · Programlama dili olarak backend tarafında Node.js (Express ya da
 Koa Framework tercih edilmeli), Database olarak MongoDB,
