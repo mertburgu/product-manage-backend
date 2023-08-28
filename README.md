@@ -13,6 +13,7 @@ Aşağıdaki adımları takip ederek projeyi yerel makinenizde çalıştırabili
 - MongoDB (yerel veya uzak bir veritabanı sunucusu)
 
 ### Kullanım
+
 Uygulama başlatıldıktan sonra, backend sunucusu localhost:3000 adresinde çalışacaktır. Aşağıda projenin temel kullanım örneklerini bulabilirsiniz:
 
 ### Kullanılanlar
@@ -27,12 +28,15 @@ Uygulama başlatıldıktan sonra, backend sunucusu localhost:3000 adresinde çal
 #### Kullanıcı Kaydı
 
 URL: /register
+
 Method: POST
+
 Açıklama: Kullanıcı kaydı işlemi.
 
 ##### Örnek İstek:
 
 POST /register
+
 Content-Type: application/json
 
 {
@@ -42,13 +46,17 @@ Content-Type: application/json
 }
 
 #### Kullanıcı Girişi
+
 URL: /login
+
 Method: POST
+
 Açıklama: Kullanıcı girişi işlemi.
 
 ##### Örnek İstek:
 
 POST /login
+
 Content-Type: application/json
 
 {
@@ -57,13 +65,19 @@ Content-Type: application/json
 }
 
 #### Ürünleri Listele
+
 URL: /products
+
 Method: GET
+
 Açıklama: Tüm ürünleri listeler.
 
 ##### Ürün Detayı
+
 URL: /products/:id
+
 Method: GET
+
 Açıklama: Belirtilen ID'ye sahip ürünün detayını getirir.
 Daha fazla endpoint ve kullanım örneği için lütfen projenin kaynak kodlarını inceleyin.
 
