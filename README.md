@@ -12,14 +12,17 @@ Aşağıdaki adımları takip ederek projeyi yerel makinenizde çalıştırabili
 - npm (Node Package Manager)
 - MongoDB (yerel veya uzak bir veritabanı sunucusu)
 
-### Kurulum
-
-1. Bu depoyu klonlayın:
-
-git clone https://github.com/mertburgu/product-manage-backend.git
-
 ### Kullanım
 Uygulama başlatıldıktan sonra, backend sunucusu localhost:3000 adresinde çalışacaktır. Aşağıda projenin temel kullanım örneklerini bulabilirsiniz:
+
+### Kullanılan Teknolojiler
+
+- Express.js
+- MongoDB
+- bcryptjs
+- cors
+- jsonwebtoken
+- mongoose
 
 #### Kullanıcı Kaydı
 
