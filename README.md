@@ -79,7 +79,6 @@ URL: /products/:id
 Method: GET
 
 Açıklama: Belirtilen ID'ye sahip ürünün detayını getirir.
-Daha fazla endpoint ve kullanım örneği için lütfen projenin kaynak kodlarını inceleyin.
 
 # Node.js App
 
@@ -93,9 +92,7 @@ localhost:3000/api/
 Bir firmanın ürünlerinin listesinin tutulduğu ve bu ürünlerin giriş
 çıkışlarının yapılıp listelendiği projenin arayüz ve backendinin hazırlanması
 
-
 ### Şemalar:
-
 
 #### Kullanıcılar;
 
@@ -107,7 +104,6 @@ Kullanıcı Adı : string
 
 Email         : string
 
-
 #### Ürünler;
 
 Ürün Adı            : string
@@ -118,13 +114,11 @@ Email         : string
 
 Stoktaki Ürün Adedi : number
 
-
 #### Ürün Hareketleri;
 
 Hareket Açıklaması  : string
 
 Giriş/Çıkış Adedi   : number
-
 
 ### Koşullar:
 
